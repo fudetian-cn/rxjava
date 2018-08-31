@@ -27,7 +27,6 @@ public interface API {
 //    @POST("clerk/loginAccount/login")
 //    Call<ResponseBody> doLogin(@Body RequestBody route);
 
-    @Headers({"Content-Type: application/json","Accept: text/json"})
     @POST("clerk/loginAccount/login")
     Observable<User> doLogin(@Body RequestBody route);
 }

@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
 //        DynamicProxy dynamicProxy = new DynamicProxy(new Vendor());
 //
 //        Sell sell = (Sell) Proxy.newProxyInstance(Sell.class.getClassLoader(), new Class[]{Sell.class}, dynamicProxy);
@@ -162,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(new Consumer<User>() {
                     @Override
                     public void accept(User user) throws Exception {
-                        Log.e(TAG,user.getBody().getCode());
                     }
                 });
 
